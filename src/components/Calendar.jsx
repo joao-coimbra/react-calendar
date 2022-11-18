@@ -10,6 +10,7 @@ import "react-datepicker/dist/react-datepicker.css";
 registerLocale("br", ptBR);
 
 function Calendar() {
+
 	const [selectDate, setSelectDate] = useState(null);
 
     const disableDates = [
@@ -87,8 +88,6 @@ function Calendar() {
 					.join(" ás ").substring(14)  === "00:00" && 'Selecione um horário válido!'}</div>
                     </DatePicker>
             </div>
-			
-            
 		</div>
 	);
 }
